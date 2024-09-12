@@ -14,7 +14,11 @@
   line-height: 24px;
   font-weight: 400;
 
-  color: $_main_color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: $_main_text_color;
   background-color: $_main_bg_color;
 
   font-synthesis: none;
@@ -25,5 +29,15 @@
 
   @include media(desktop) {
     font-size: 20px;
+  }
+}
+
+.section {
+  padding: 40px 16px;
+  width: 320px;
+
+  @include media(desktop) {
+    padding: 80px 72px;
+    width: 1440px;
   }
 }
