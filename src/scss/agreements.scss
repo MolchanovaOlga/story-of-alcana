@@ -76,3 +76,24 @@
   justify-content: center;
   gap: 8px;
 }
+
+.agreements-uppercase-text {
+  text-transform: uppercase;
+  font-weight: 700;
+  @include font(16, 24);
+}
+
+.agreements-list-title {
+  margin: 32px 0 16px 0;
+  @include font(20, 30);
+  font-weight: 400;
+
+  @include media(desktop) {
+    margin: 48px 0 16px 0;
+    @include font(24, 36);
+  }
+}
+
+.agreements-bold-text {
+  font-weight: 700;
+}
