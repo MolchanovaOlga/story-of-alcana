@@ -1,9 +1,10 @@
 .agreements-container {
   width: 320px;
-  padding: 24px 16px;
+  padding: 24px 16px 48px 16px;
   background-color: $_bg_section_color;
   display: flex;
   justify-content: center;
+  margin: 0 auto;
 
   @include media(desktop) {
     width: 1440px;
@@ -78,11 +79,33 @@
 }
 
 .agreements-list {
-  list-style: inside;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 8px;
+}
+
+.agreements-item {
+  position: relative;
+  padding-left: 20px;
+
+  @include media(desktop) {
+    padding-left: 28px;
+  }
+}
+
+.agreements-item::before {
+  content: '.';
+  position: absolute;
+  left: 0;
+  top: 4px;
+  margin: 0 4px;
+  @include font(28, 0);
+
+  @include media(desktop) {
+    @include font(36, 0);
+    margin: 0 8px;
+  }
 }
 
 .agreements-uppercase-text {
