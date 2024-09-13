@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,700;1,700&display=swap');
-
 .agreements-container {
   width: 320px;
   padding: 24px 16px;
@@ -19,6 +17,11 @@
   }
 }
 
+.arrow-icon {
+  stroke: $_links_color;
+  margin-right: 8px;
+}
+
 .privacy-link {
   display: flex;
   align-items: center;
@@ -29,11 +32,16 @@
   @include media(desktop) {
     margin-bottom: 80px;
   }
-}
 
-.arrow-icon {
-  stroke: $_links_color;
-  margin-right: 8px;
+  &:hover {
+    color: $_main_text_color;
+    transition: color 200ms linear;
+  }
+
+  &:hover .arrow-icon {
+    stroke: $_main_text_color;
+    transition: stroke 200ms linear;
+  }
 }
 
 .agreements-title {
