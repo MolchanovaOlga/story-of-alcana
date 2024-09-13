@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,700;1,700&display=swap');
+
+.agreements-container {
+  width: 320px;
+  padding: 24px 16px;
+  background-color: $_bg_section_color;
+  display: flex;
+  justify-content: center;
+
+  @include media(desktop) {
+    width: 1440px;
+    padding: 90px 72px;
+  }
+}
+
+.agreements-content-container {
+  @include media(desktop) {
+    width: 856px;
+  }
+}
+
+.privacy-link {
+  display: flex;
+  align-items: center;
+  color: $_links_color;
+  @include font(16, 24);
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    margin-bottom: 80px;
+  }
+}
+
+.arrow-icon {
+  stroke: $_links_color;
+  margin-right: 8px;
+}
+
+.agreements-title {
+  font-family: 'Alegreya', sans-serif;
+  @include font(32, 48);
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+
+  @include media(desktop) {
+    @include font(40, 60);
+    margin-bottom: 72px;
+  }
+}
+
+.agreements-paragraph-title {
+  font-family: 'Alegreya', sans-serif;
+  @include font(20, 30);
+  font-weight: 700;
+  margin: 48px 0 24px 0;
+  color: $_main_color;
+
+  @include media(desktop) {
+    @include font(24, 36);
+    margin: 32px 0 8px 0;
+  }
+}
+
+.agreements-paragraphs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+.agreements-list {
+  list-style: inside;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
