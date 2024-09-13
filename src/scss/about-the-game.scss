@@ -1,0 +1,42 @@
+.about-the-game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .container {
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 238px;
+      // z-index: -1;
+
+      @include media(desktop) {
+        top: 185px;
+        right: 60%;
+        height: 470px;
+      }
+    }
+
+    .about-the-game-text {
+      display: flex;
+      flex-direction: column;
+      align-self: flex-end;
+      gap: 32px;
+      width: 50%;
+
+      p {
+        @include font(16, 20);
+        line-height: 24px;
+
+        @include media(desktop) {
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}
