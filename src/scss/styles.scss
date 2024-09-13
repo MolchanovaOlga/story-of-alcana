@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,700;1,700&display=swap');
 
 @import './header.scss';
 @import './hero.scss';
@@ -16,12 +17,8 @@
   @include font(16, 24);
   font-weight: 400;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
   color: $_main_text_color;
-  background-color: $_main_bg_color;
+  background-color: $_bg_section_color;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -36,10 +33,30 @@
 
 .section {
   padding: 40px 16px;
-  width: 320px;
 
   @include media(desktop) {
     padding: 80px 72px;
-    width: 1440px;
   }
+}
+
+.section-title {
+  font-family: 'Alegreya', sans-serif;
+  @include font(32, 48);
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+
+  @include media(desktop) {
+    @include font(40, 60);
+    margin-bottom: 72px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1296px;
+  margin: 0 auto;
 }
