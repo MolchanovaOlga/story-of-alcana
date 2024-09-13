@@ -1,41 +1,60 @@
 .about-the-game {
+  position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  width: 100%;
+  gap: 32px;
 
-  .container {
-    position: relative;
+  @include media(desktop) {
+    flex-direction: row;
+  }
+
+  .image-wrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: -1;
+    width: 474px;
+
+    @include media(desktop) {
+      top: 40px;
+      left: -400px;
+      width: 938px;
+    }
 
     img {
-      position: absolute;
-      top: 0;
-      right: 0;
       height: 238px;
-      // z-index: -1;
 
       @include media(desktop) {
-        top: 185px;
-        right: 60%;
         height: 470px;
       }
     }
+  }
 
-    .about-the-game-text {
-      display: flex;
-      flex-direction: column;
-      align-self: flex-end;
+  .about-the-game-text {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 262px;
+
+    @include media(desktop) {
+      width: 100%;
       gap: 32px;
-      width: 50%;
+      margin-top: 0;
+    }
 
-      p {
-        @include font(16, 20);
-        line-height: 24px;
+    p {
+      @include font(16, 20);
+      line-height: 24px;
 
-        @include media(desktop) {
-          font-size: 20px;
-          line-height: 30px;
-        }
+      align-self: flex-end;
+
+      @include media(desktop) {
+        @include font(20, 30);
+        line-height: 30px;
+        width: 50%;
       }
     }
   }
