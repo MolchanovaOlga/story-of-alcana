@@ -14,6 +14,7 @@
         color: $_numbers_color;
 
         @include media(desktop) {
+          @include font(40, 60);
           padding: 0 20px;
         }
       }
@@ -25,6 +26,7 @@
         line-height: 24px;
 
         @include media(desktop) {
+          @include font(24, 28);
           line-height: 36px;
         }
       }
@@ -67,7 +69,6 @@
           height: 10px;
           transform: translate(-50%, -50%);
           display: inline-block;
-
           width: 24px;
           height: 24px;
           transition: transform 0.3s ease-in-out;
@@ -91,6 +92,7 @@
         line-height: 24px;
 
         @include media(desktop) {
+          @include font(20, 30);
           line-height: 30px;
         }
       }
