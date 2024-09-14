@@ -3,6 +3,8 @@
 
 @import './header.scss';
 @import './hero.scss';
+@import './statistic.scss';
+@import './mobile-menu.scss';
 @import './about-the-game.scss';
 @import './game-features.scss';
 @import './how-to-play.scss';
@@ -59,4 +61,12 @@
   width: 100%;
   max-width: 1296px;
   margin: 0 auto;
+}
+
+html {
+  scroll-padding-top: 24px;
+
+  @include media(desktop) {
+    scroll-padding-top: 100px;
+  }
 }

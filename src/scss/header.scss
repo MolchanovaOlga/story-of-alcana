@@ -1,9 +1,22 @@
 .header {
+  position: relative;
+
   @include media(desktop) {
-    display: flex;
-    align-items: center;
+    height: 100px;
+  }
+}
+
+.header-container {
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  @include media(desktop) {
+    background-color: $_bg_section_color;
     justify-content: center;
-    padding: 38px 0;
   }
 }
 
@@ -15,6 +28,7 @@
     align-items: center;
     justify-content: center;
     gap: 40px;
+    padding: 38px 0;
     color: $_navigation_color;
   }
 }
@@ -46,12 +60,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: transparent;
+  background-color: $_bg_section_color;
+  border-radius: 16px;
   border: none;
-  position: absolute;
   top: 24px;
   right: 16px;
   padding: 0;
+  margin: 24px 16px 0;
   width: 40px;
   height: 40px;
 
