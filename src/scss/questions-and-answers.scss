@@ -1,6 +1,10 @@
 .faq {
   .faq-item {
-    padding: 16px;
+    padding: 16px 0;
+
+    @include media(desktop) {
+      padding: 16px;
+    }
 
     .faq-question {
       display: flex;
