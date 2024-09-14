@@ -1,5 +1,4 @@
 .agreements-container {
-  width: 320px;
   padding: 24px 16px 48px 16px;
   background-color: $_bg_section_color;
   display: flex;
@@ -9,12 +8,6 @@
   @include media(desktop) {
     width: 1440px;
     padding: 90px 72px;
-  }
-}
-
-.agreements-content-container {
-  @include media(desktop) {
-    width: 856px;
   }
 }
 
