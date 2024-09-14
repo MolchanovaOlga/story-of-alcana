@@ -1,14 +1,9 @@
-html {
-  scroll-padding-top: 24px;
+.header {
+  position: relative;
 
   @include media(desktop) {
-    scroll-padding-top: 100px;
+    height: 100px;
   }
-}
-
-.header {
-  height: 100px;
-  position: relative;
 }
 
 .header-container {

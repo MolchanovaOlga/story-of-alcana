@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,700;1,700&display=swap');
 
 @import './header.scss';
-
 @import './hero.scss';
+@import './statistic.scss';
 @import './mobile-menu.scss';
 @import './about-the-game.scss';
 @import './game-features.scss';
@@ -60,4 +60,12 @@
   width: 100%;
   max-width: 1296px;
   margin: 0 auto;
+}
+
+html {
+  scroll-padding-top: 24px;
+
+  @include media(desktop) {
+    scroll-padding-top: 100px;
+  }
 }

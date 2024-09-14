@@ -1,0 +1,46 @@
+.statistic-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.statistic-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.statistic-title {
+  color: $_statistic_color;
+  @include font(16, 24);
+  text-transform: uppercase;
+  font-weight: 400;
+
+  @include media(desktop) {
+    @include font(20, 24);
+    margin-bottom: 16px;
+  }
+}
+
+.statistic-rating-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.star-icon {
+  fill: $_star_color;
+  width: 32px;
+  height: 32px;
+}
+
+.statistic-text {
+  @include font(24, 36);
+
+  @include media(desktop) {
+    @include font(32, 32);
+  }
+}
