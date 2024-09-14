@@ -2,7 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 60px;
+  flex-wrap: wrap;
+  gap: 32px;
+
+  @include media(desktop) {
+    gap: 60px;
+  }
 }
 
 .statistic-item {
