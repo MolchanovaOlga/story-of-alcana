@@ -1,0 +1,70 @@
+.grid-container {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 96px 24px;
+  }
+
+  .grid-item {
+    display: flex;
+    gap: 16px;
+
+    .number {
+      @include font(24, 40);
+      color: $_numbers_color;
+
+      @include media(desktop) {
+        @include font(40, 60);
+        padding: 0 20px;
+      }
+    }
+
+    .item-content {
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        @include font(16, 24);
+        color: $_main_color;
+        line-height: 24px;
+
+        @include media(desktop) {
+          @include font(24, 28);
+          line-height: 36px;
+        }
+      }
+
+      p {
+        @include font(16, 20);
+        line-height: 24px;
+        margin: 8px 0 16px;
+
+        @include media(desktop) {
+          @include font(20, 30);
+          line-height: 30px;
+        }
+      }
+
+      .media-container {
+        position: relative;
+        width: 100%;
+        height: auto;
+
+        .image,
+        .video {
+          display: block;
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          border-radius: 8px;
+        }
+
+        .video {
+          display: none;
+        }
+      }
+    }
+  }
+}
