@@ -1,3 +1,11 @@
+html {
+  scroll-padding-top: 24px;
+
+  @include media(desktop) {
+    scroll-padding-top: 100px;
+  }
+}
+
 .header {
   height: 100px;
   position: relative;
