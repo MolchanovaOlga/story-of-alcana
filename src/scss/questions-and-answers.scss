@@ -1,6 +1,10 @@
 .faq {
+  margin: 0 !important;
   .faq-item {
     padding: 16px 0;
+    &:first-child {
+      padding-top: 0;
+    }
 
     @include media(desktop) {
       padding: 16px;
@@ -11,11 +15,6 @@
       align-items: center;
       justify-content: space-between;
       cursor: pointer;
-      gap: 16px;
-
-      @include media(desktop) {
-        gap: 20px;
-      }
 
       .number {
         @include font(24, 40);
@@ -32,10 +31,12 @@
         width: 100%;
         color: $_main_color;
         line-height: 24px;
+        margin: 0 16px;
 
         @include media(desktop) {
           @include font(24, 28);
           line-height: 36px;
+          margin: 0 20px;
         }
       }
 
@@ -57,13 +58,13 @@
         .plus {
           position: absolute;
           top: -18px;
-          left: 0;
-          width: 10px;
+          right: -8px;
+          width: 16px;
           height: 10px;
           transform: translate(-50%, -50%);
           @include media(desktop) {
             top: -18px;
-            left: 0;
+            right: -12px;
             width: 24px;
             height: 24px;
           }
@@ -80,15 +81,15 @@
           transform: translate(-50%, -50%);
           display: inline-block;
           top: -20px;
-          left: 0;
-          width: 10px;
+          right: -8px;
+          width: 16px;
           height: 10px;
           transition: transform 0.3s ease-in-out;
           opacity: 0;
           @include media(desktop) {
             top: -22px;
-            left: -1px;
-            width: 24px;
+            right: -10px;
+            width: 23px;
             height: 23px;
           }
         }
