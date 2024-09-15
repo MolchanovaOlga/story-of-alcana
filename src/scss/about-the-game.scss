@@ -11,7 +11,7 @@
 
   .image-wrapper {
     position: absolute;
-    right: 0;
+    left: -193px;
     top: 0;
     bottom: 0;
     overflow: hidden;
@@ -49,9 +49,8 @@
       @include font(16, 20);
       line-height: 24px;
 
-      align-self: flex-end;
-
       @include media(desktop) {
+        align-self: flex-end;
         @include font(20, 30);
         line-height: 30px;
         width: 50%;
