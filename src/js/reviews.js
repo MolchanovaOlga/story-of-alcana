@@ -1,7 +1,5 @@
 export function initReviewsSlider() {
-  const swiper = new Swiper('.reviews-swiper .swiper', {
-    slidesPerView: 3,
-    spaceBetween: 24,
+  const reviewSwiper = new Swiper('.reviews-swiper', {
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -30,24 +28,21 @@ export function initReviewsSlider() {
         slidesPerView: 3.7,
         spaceBetween: 24,
         slidesOffsetBefore: 72,
-        slidesOffsetAfter: 72,
+        slidesOffsetAfter: 300,
       },
       768: {
         slidesPerView: 2,
-        spaceBetween: 24,
-        slidesOffsetBefore: 24,
-        slidesOffsetAfter: 24,
       },
       320: {
-        slidesPerView: 1.2,
+        slidesPerView: 1.4,
         spaceBetween: 16,
         slidesOffsetBefore: 16,
-        slidesOffsetAfter: 16,
+        slidesOffsetAfter: 250,
       },
     },
   });
 
-  if (swiper.isBeginning) {
+  if (reviewSwiper.isBeginning) {
     document.querySelector('.swiper-button-prev').style.display = 'none';
   }
 }
