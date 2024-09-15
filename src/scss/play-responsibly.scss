@@ -1,0 +1,98 @@
+.responsibly-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  justify-content: center;
+  margin: 0 auto;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+
+  @include media(desktop) {
+    width: 636px;
+  }
+}
+
+.responsibly-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.responsibly-item {
+  position: relative;
+  padding-left: 20px;
+
+  @include media(desktop) {
+    padding-left: 28px;
+  }
+}
+
+.responsibly-item::before {
+  content: '.';
+  position: absolute;
+  left: 0;
+  top: 4px;
+  margin: 0 4px;
+  @include font(28, 0);
+
+  @include media(desktop) {
+    @include font(36, 0);
+    margin: 0 8px;
+  }
+}
+
+.responsibly-img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  @include media(desktop) {
+    margin-right: 110px;
+  }
+}
+
+.responsibly-img {
+  width: 288px;
+  height: 258px;
+
+  @include media(desktop) {
+    width: 306px;
+    height: 258px;
+  }
+}
+
+.responsibly-google-play-link {
+  background-image: url('/img/google-play.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 288px;
+  height: 83px;
+  transition: transform 200ms linear;
+
+  position: absolute;
+  bottom: 4px;
+
+  @include media(desktop) {
+    width: 300px;
+    height: 86px;
+    bottom: -32px;
+  }
+
+  &:hover {
+    transform: translateY(-10%);
+  }
+}
