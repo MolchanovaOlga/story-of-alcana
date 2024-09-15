@@ -97,7 +97,7 @@
       display: block;
       max-height: 0;
       overflow: hidden;
-      transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+      transition: max-height 1s ease-in-out, padding 1s ease-in-out;
       margin-left: 0;
       padding: 0 !important;
       @include media(desktop) {
@@ -125,9 +125,9 @@
       .toggle-icon {
         .plus span {
           opacity: 0;
-          transform: rotate(360deg);
-          transition: transform 0.5s ease-in-out;
-          animation: identifier 0.5s ease-in-out;
+          transform: rotate(180deg);
+          transition: transform 0.3s ease-in-out;
+          animation: identifier 0.3s ease-in-out;
         }
         @keyframes identifier {
           0% {
