@@ -16,7 +16,6 @@
 
 .blur-overlay {
   position: absolute;
-  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
@@ -60,22 +59,12 @@
   }
 }
 
-.hero-text-mob {
+.hero-text {
   @include font(20, 30);
   font-weight: 600;
-  display: block;
   text-align: center;
 
   @include media(desktop) {
-    display: none;
-  }
-}
-
-.hero-text-desk {
-  display: none;
-
-  @include media(desktop) {
-    display: block;
     @include font(32, 48);
     text-align: center;
     width: 636px;
