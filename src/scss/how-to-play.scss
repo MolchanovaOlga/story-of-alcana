@@ -52,13 +52,13 @@
       }
 
       p {
-        @include font(16, 20);
-        line-height: 24px;
+        @include font(16, 24);
         margin: 8px 0 16px;
+        width: 288px;
 
         @include media(desktop) {
           @include font(20, 30);
-          line-height: 30px;
+          width: 306px;
         }
       }
 
