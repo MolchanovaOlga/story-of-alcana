@@ -54,7 +54,6 @@
       p {
         @include font(16, 24);
         margin: 8px 0 16px;
-        width: 288px;
 
         @include media(desktop) {
           @include font(20, 30);
@@ -64,7 +63,6 @@
 
       .media-container {
         background-color: $_gray_color;
-        width: 288px;
         height: 240px;
         border-radius: 8px;
         margin-top: 16px;
