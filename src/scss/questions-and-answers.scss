@@ -28,7 +28,7 @@
         width: 100%;
         color: $_main_color;
         line-height: 24px;
-        margin: 0 16px;
+        margin: 0 32px 0 16px;
 
         @include media(desktop) {
           @include font(24, 28);
