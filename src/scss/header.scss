@@ -7,16 +7,19 @@
 }
 
 .header-container {
-  width: 100%;
   position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 5;
   display: flex;
   align-items: center;
   justify-content: end;
+  width: 320px;
 
   @include media(desktop) {
-    background-color: $_bg_section_color;
     justify-content: center;
+    background-color: $_bg_section_color;
+    width: 1440px;
   }
 }
 
@@ -69,6 +72,7 @@
   margin: 24px 16px 0;
   width: 40px;
   height: 40px;
+  outline: none;
 
   @include media(desktop) {
     display: none;
