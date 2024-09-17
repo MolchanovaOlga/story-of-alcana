@@ -26,17 +26,11 @@ export function initSlider() {
       },
     },
     breakpoints: {
-      1024: {
+      1440: {
         slidesPerView: 3,
         spaceBetween: 24,
         slidesOffsetBefore: 72,
         slidesOffsetAfter: 72,
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 24,
-        slidesOffsetBefore: 24,
-        slidesOffsetAfter: 24,
       },
       320: {
         slidesPerView: 1.2,

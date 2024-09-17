@@ -24,14 +24,11 @@ export function initReviewsSlider() {
       },
     },
     breakpoints: {
-      1024: {
+      1440: {
         slidesPerView: 3.7,
         spaceBetween: 24,
         slidesOffsetBefore: 72,
         slidesOffsetAfter: 300,
-      },
-      768: {
-        slidesPerView: 2,
       },
       320: {
         slidesPerView: 1.4,

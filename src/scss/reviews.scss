@@ -1,6 +1,12 @@
 .reviews {
   background: linear-gradient(180deg, #270931 0%, #691c83 50%, #270931 100%);
   padding: 80px 0;
+  width: 320px;
+  margin: 0 auto;
+
+  @include media(desktop) {
+    width: 1440px;
+  }
 
   swiper-slide {
     display: flex;
