@@ -8,13 +8,14 @@
     width: 1440px;
   }
 
-  swiper-slide {
+  .review-item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: $_bg_section_color;
     border-radius: 8px;
-    padding: 16px;
+    max-width: 264px !important;
+    margin: 0;
 
     @include media(desktop) {
       padding: 24px;
@@ -24,13 +25,14 @@
       @include font(18, 24);
       color: $_main_text_color;
       line-height: 30px;
+      margin: 16px 16px 0 16px;
     }
 
     .review-author {
       display: flex;
       align-items: center;
       gap: 16px;
-      margin-top: 16px;
+      margin: 16px;
 
       img {
         width: 48px;
