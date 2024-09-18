@@ -16,7 +16,7 @@ export function initCounterAnimation() {
       if (!startTime) startTime = timestamp;
       const progress = Math.min((timestamp - startTime) / duration, 1);
       const value = (end - start) * progress + start;
-      element.textContent = value.toFixed(1);
+      element.textContent = Math.round(value).toLocaleString();
       if (progress < 1) {
         window.requestAnimationFrame(step);
       }
