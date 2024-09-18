@@ -37,8 +37,8 @@ export function initCounterAnimation() {
   function onScroll() {
     if (isInViewport(statisticSection) && !animated) {
       animated = true;
-      animateCounter(ratingCounter, 0, 4.8, 1000);
-      animateCounter(downloadsCounter, 0, 50000, 1500);
+      animateCounter(ratingCounter, 0, 4.8, 500);
+      animateCounter(downloadsCounter, 0, 50000, 700);
     }
   }
 
