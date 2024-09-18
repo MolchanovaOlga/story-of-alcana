@@ -6,16 +6,20 @@ export function initSlider() {
     const isReviewsSlider = slider.classList.contains('reviews-slider');
 
     const swiper = new Swiper(slider, {
-      slidesPerView: isReviewsSlider ? 1 : 3,
-      spaceBetween: isReviewsSlider ? 32 : 24,
+      slidesPerView: 1,
+      spaceBetween: 24,
+
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
+        dynamicBullets: false,
       },
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+      loop: false,
+      initialSlide: 0,
       on: {
         slideChange: function () {
           if (this.isBeginning) {
@@ -47,24 +51,23 @@ export function initSlider() {
               centeredSlides: true,
             },
             1024: {
-              slidesPerView: 3.8,
+              slidesPerView: 4,
               slidesOffsetBefore: 72,
-              slidesOffsetAfter: 500,
+              slidesOffsetAfter: 900,
             },
           }
         : {
-            1440: {
-              slidesPerView: 3,
-              spaceBetween: 24,
-              slidesOffsetBefore: 72,
-              slidesOffsetAfter: 72,
-            },
             320: {
               slidesPerView: 1.23,
               spaceBetween: 16,
               centeredSlides: true,
               slidesOffsetBefore: 0,
               slidesOffsetAfter: 0,
+            },
+            1440: {
+              slidesPerView: 3,
+              slidesOffsetBefore: 72,
+              slidesOffsetAfter: 72,
             },
           },
     });
