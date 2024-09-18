@@ -67,7 +67,7 @@ export function initSlider() {
             1440: {
               slidesPerView: 3,
               slidesOffsetBefore: 72,
-              slidesOffsetAfter: 72,
+              slidesOffsetAfter: 500,
             },
           },
     });
