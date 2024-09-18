@@ -1,6 +1,6 @@
 import { initFaq } from './js/faq.js';
 import { initSlider } from './js/slider.js';
-import { initAboutTheGame } from './js/about-the-game.js';
+import { initVisibilityAnimation } from './js/visibility-animation.js';
 import { initSectionTitleAnimation } from './js/animate-section-title.js';
 import { initCounterAnimation } from './js/counter-animation.js';
 
@@ -11,7 +11,7 @@ import './js/play-video.js';
 document.addEventListener('DOMContentLoaded', () => {
   initFaq();
   initSlider();
-  initAboutTheGame();
+  initVisibilityAnimation();
   initSectionTitleAnimation();
   initCounterAnimation();
 });

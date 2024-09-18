@@ -59,13 +59,13 @@
   }
 }
 
-.about-the-game .image-wrapper,
-.about-the-game .about-the-game-text {
+.visibility-animation .image-wrapper,
+.visibility-animation .about-the-game-text {
   opacity: 0;
   transition: all 0.6s ease-in-out;
 }
 
-.about-the-game .image-wrapper {
+.visibility-animation .image-wrapper {
   transform: translateX(-100px);
 }
 
@@ -73,8 +73,8 @@
   transform: translateX(100px);
 }
 
-.about-the-game.in-view .image-wrapper,
-.about-the-game.in-view .about-the-game-text {
+.visibility-animation.in-view .image-wrapper,
+.visibility-animation.in-view .about-the-game-text {
   opacity: 1;
   transform: translateX(0);
 }
