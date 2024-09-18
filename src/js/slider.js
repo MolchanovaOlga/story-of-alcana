@@ -3,10 +3,11 @@ export function initSlider() {
 
   sliders.forEach(slider => {
     const isHowToPlaySlider = slider.classList.contains('how-to-play-slider');
+    const isReviewsSlider = slider.classList.contains('reviews-slider');
 
     const swiper = new Swiper(slider, {
-      slidesPerView: 3,
-      spaceBetween: 24,
+      slidesPerView: isReviewsSlider ? 1 : 3,
+      spaceBetween: isReviewsSlider ? 32 : 24,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -36,6 +37,19 @@ export function initSlider() {
               slidesPerView: 1.1,
               spaceBetween: 16,
               centeredSlides: true,
+            },
+          }
+        : isReviewsSlider
+        ? {
+            320: {
+              slidesPerView: 1.23,
+              spaceBetween: 16,
+              centeredSlides: true,
+            },
+            1024: {
+              slidesPerView: 3.8,
+              slidesOffsetBefore: 72,
+              slidesOffsetAfter: 500,
             },
           }
         : {
