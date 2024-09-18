@@ -50,7 +50,7 @@ export function initSlider() {
               spaceBetween: 16,
               centeredSlides: true,
             },
-            1024: {
+            1440: {
               slidesPerView: 4,
               slidesOffsetBefore: 72,
               slidesOffsetAfter: 900,
@@ -65,9 +65,9 @@ export function initSlider() {
               slidesOffsetAfter: 0,
             },
             1440: {
-              slidesPerView: 3,
+              slidesPerView: 2.5,
               slidesOffsetBefore: 72,
-              slidesOffsetAfter: 500,
+              slidesOffsetAfter: 520,
             },
           },
     });
