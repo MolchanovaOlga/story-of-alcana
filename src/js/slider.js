@@ -2,6 +2,8 @@ export function initSlider() {
   const sliders = document.querySelectorAll('.swiper');
 
   sliders.forEach(slider => {
+    const isHowToPlaySlider = slider.classList.contains('how-to-play-slider');
+
     const swiper = new Swiper(slider, {
       slidesPerView: 3,
       spaceBetween: 24,
@@ -28,20 +30,29 @@ export function initSlider() {
           }
         },
       },
-      breakpoints: {
-        1440: {
-          slidesPerView: 3,
-          spaceBetween: 24,
-          slidesOffsetBefore: 72,
-          slidesOffsetAfter: 72,
-        },
-        320: {
-          slidesPerView: 1.2,
-          spaceBetween: 16,
-          slidesOffsetBefore: 16,
-          slidesOffsetAfter: 16,
-        },
-      },
+      breakpoints: isHowToPlaySlider
+        ? {
+            320: {
+              slidesPerView: 1.1,
+              spaceBetween: 16,
+              centeredSlides: true,
+            },
+          }
+        : {
+            1440: {
+              slidesPerView: 3,
+              spaceBetween: 24,
+              slidesOffsetBefore: 72,
+              slidesOffsetAfter: 72,
+            },
+            320: {
+              slidesPerView: 1.23,
+              spaceBetween: 16,
+              centeredSlides: true,
+              slidesOffsetBefore: 0,
+              slidesOffsetAfter: 0,
+            },
+          },
     });
 
     if (swiper.isBeginning) {
