@@ -3,6 +3,7 @@ import { initSlider } from './js/slider.js';
 import { initVisibilityAnimation } from './js/visibility-animation.js';
 import { initSectionTitleAnimation } from './js/animate-section-title.js';
 import { initCounterAnimation } from './js/counter-animation.js';
+import { initPlayResponsibly } from './js/play-responsibly.js';
 
 import './js/mobile-menu.js';
 import './js/scroll-reload.js';
@@ -14,4 +15,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initVisibilityAnimation();
   initSectionTitleAnimation();
   initCounterAnimation();
+  initPlayResponsibly();
 });

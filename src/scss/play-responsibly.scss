@@ -96,3 +96,23 @@
     transform: translateY(-10%);
   }
 }
+
+.responsibly-img-container,
+.text-container {
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+}
+
+.responsibly-img-container {
+  transform: translateX(100px);
+}
+
+.text-container {
+  transform: translateX(-100px);
+}
+
+.responsibly-container.in-view .responsibly-img-container,
+.responsibly-container.in-view .text-container {
+  opacity: 1;
+  transform: translateX(0);
+}
