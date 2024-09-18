@@ -9,14 +9,20 @@ export function initCounterAnimation() {
 
   let animated = false;
 
-  function animateCounter(element, start, end, duration) {
+  function animateCounter(element, start, end, duration, decimalPlaces = 0) {
     let startTime = null;
 
     function step(timestamp) {
       if (!startTime) startTime = timestamp;
       const progress = Math.min((timestamp - startTime) / duration, 1);
       const value = (end - start) * progress + start;
-      element.textContent = Math.round(value).toLocaleString();
+
+      if (decimalPlaces > 0) {
+        element.textContent = value.toFixed(decimalPlaces);
+      } else {
+        element.textContent = Math.round(value).toLocaleString();
+      }
+
       if (progress < 1) {
         window.requestAnimationFrame(step);
       }
@@ -37,7 +43,7 @@ export function initCounterAnimation() {
   function onScroll() {
     if (isInViewport(statisticSection) && !animated) {
       animated = true;
-      animateCounter(ratingCounter, 0, 4.8, 500);
+      animateCounter(ratingCounter, 0, 4.8, 500, 1);
       animateCounter(downloadsCounter, 0, 50000, 700);
     }
   }
