@@ -51,9 +51,9 @@ export function initSlider() {
               centeredSlides: true,
             },
             1440: {
-              slidesPerView: 4,
+              slidesPerView: 3.8,
               slidesOffsetBefore: 72,
-              slidesOffsetAfter: 900,
+              slidesOffsetAfter: 450,
             },
           }
         : {
@@ -65,9 +65,9 @@ export function initSlider() {
               slidesOffsetAfter: 0,
             },
             1440: {
-              slidesPerView: 2.5,
+              slidesPerView: 3,
               slidesOffsetBefore: 72,
-              slidesOffsetAfter: 520,
+              slidesOffsetAfter: 72,
             },
           },
     });
