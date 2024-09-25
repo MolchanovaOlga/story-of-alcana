@@ -2,7 +2,7 @@
   &.section {
     padding: 0;
     @include media(desktop) {
-      padding: 80px 72px;
+      padding: 80px 48px;
     }
   }
   .grid-container {
@@ -57,7 +57,7 @@
 
         @include media(desktop) {
           @include font(20, 30);
-          width: 306px;
+          width: 280px;
         }
       }
 
@@ -69,7 +69,7 @@
         overflow: hidden;
 
         @include media(desktop) {
-          width: 306px;
+          width: 280px;
           height: 240px;
         }
 
