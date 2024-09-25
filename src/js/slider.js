@@ -46,12 +46,13 @@ export function initSlider() {
         : isReviewsSlider
         ? {
             320: {
-              slidesPerView: 1.23,
+              slidesPerView: 1.25,
               spaceBetween: 16,
               centeredSlides: true,
+              slidesOffsetBefore: -18,
             },
             1280: {
-              slidesPerView: 3.8,
+              slidesPerView: 3.9,
               slidesOffsetBefore: 72,
               slidesOffsetAfter: 450,
             },
